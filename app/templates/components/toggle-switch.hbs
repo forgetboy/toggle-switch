@@ -1,0 +1,18 @@
+<span class="toggle-switch-component" {{action 'toggle'}}>
+  <button type="button" class="toggle-switch">
+    <span class="toggle-switch-a11y-message">
+      {{a11yMessage}}  
+    </span>
+  </button>
+  {{#if shouldDisplayOnOffMessage}}
+    <span class="toggle-switch-message">
+      {{#if isOn}}
+        {{onMessage}}
+      {{else}}
+        {{offMessage}}
+      {{/if}}
+    </span>
+  {{/if}}
+  {{yield}}
+</span>
+

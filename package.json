@@ -1,7 +1,7 @@
 {
   "name": "toggle-switch",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Toggle switch",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -33,7 +33,8 @@
     "ember-export-application-global": "^1.0.2"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "toggle switch"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
