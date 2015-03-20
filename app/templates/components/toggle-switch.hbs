@@ -4,12 +4,12 @@
       {{a11yMessage}}  
     </span>
   </button>
-  {{#if shouldDisplayOnOffMessage}}
-    <span class="toggle-switch-message">
+  {{#if displayToggleMessage}}
+    <span class="toggle-message">
       {{#if isOn}}
-        {{onMessage}}
+	{{toggleMessageWhenOn}}
       {{else}}
-        {{offMessage}}
+	{{toggleMessageWhenOff}}
       {{/if}}
     </span>
   {{/if}}

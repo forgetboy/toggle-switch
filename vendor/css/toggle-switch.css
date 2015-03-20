@@ -1,3 +1,7 @@
+/* Hide the element in a way it is accessible to screen readers across browsers.
+ * Copied from - http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
 .toggle-switch-a11y-message {
   position: absolute !important;
   height: 1px;
@@ -10,35 +14,49 @@
 .toggle-switch-component,
 .toggle-switch {
   display: inline-block;
-  height: 13px;
-  border-radius: 20px;
+  height: 28px;
+  border-radius: 28px;
   cursor: pointer;
 }
 
 .toggle-switch-component {
-  border: 1px solid transparent;
-  background-color: #b8b8b8;
-  width: 35px;
+  border: 1px solid #c9342f;
+  width: 62px;
   position: relative;
 }
 
 .toggle-switch {
   border: 0;
-  background-color: #fff;
-  width: 13px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   top: 0;
   left: 0;
   outline: 0;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .2s;
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,0.32) 0px 1px 1px 0px;
 }
 
 .toggle-switch-is-on .toggle-switch-component {
-  background-color: #167ac6;
+  border-color: #69a62a;
 }
 
 .toggle-switch-is-on .toggle-switch {
   right: 0;
   left: 100%;
-  margin-left: -13px;
+  margin-left: -28px;
+}
+
+.toggle-message {
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 33px;
+  margin-top: 8px;
+  color: #c9342f; 
+}
+
+.toggle-switch-is-on .toggle-message {
+  margin-left: 6px;
+  color: #69a62a; 
 }
