@@ -1,7 +1,7 @@
 {
   "name": "toggle-switch",
   "version": "0.0.0",
-  "description": "Toggle switch",
+  "description": "Toggle switch/button",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/forgetboy/toggle-switch.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Vishal Gupta",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
@@ -34,7 +34,8 @@
   },
   "keywords": [
     "ember-addon",
-    "toggle switch"
+    "toggle switch",
+    "toggle button"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"

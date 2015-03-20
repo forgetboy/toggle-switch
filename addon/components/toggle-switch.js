@@ -3,7 +3,7 @@ import Ember from "ember";
 export default Ember.Component.extend({
 
   classNameBindings: ['isOn:toggle-switch-is-on'],
- 
+
   isOn: false,
   a11yMessage: 'Click to toggle',  
   toggleMessageWhenOn: 'Yes',
