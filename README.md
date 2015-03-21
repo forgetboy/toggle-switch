@@ -1,25 +1,28 @@
 # Toggle-switch
 
-This README outlines the details of collaborating on this Ember addon.
+A light weight and simple toggle switch/button addon. 
 
-## Installation
+##INSTALLATION:
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+ember install:addon toggle-switch
 
-## Running
+##HOW TO USE:
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+1. Display barebones
 
-## Running Tests
+  {{toggle-switch}}
 
-* `ember test`
-* `ember test --server`
+2. Display with default Yes/No text
 
-## Building
+ {{toggle-switch displayToggleMessage=true}}
 
-* `ember build`
+3. Display with custom messages
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+ {{toggle-switch displayToggleMessage=true toggleMessageWhenOn="Good" toggleMessageWhenOff="Bad"}}
+
+  Note: You may need to adjust the width using css to accommodate custom messages
+
+4. Listen to toggle action. A 'isOn' value is passed to the listener
+  {{toggle-switch action="myToggleAction"}}
+
+
